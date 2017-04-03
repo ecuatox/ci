@@ -16,9 +16,10 @@ debug: false
 secret: GITHUB_WEBHOOK_SECRET
 repo_name: REPOSITORY_NAME
 repo_url: https://github.com/USERNAME/REPOSITORY_NAME.git
-requirements: REQUIREMENTS_FILE
+test_requirements: TEST_REQUIREMENTS_FILE
+prod_requirements: PROD_REQUIREMENTS_FILE
 repo_root: REPOSITORY_ROOT_PATH
-pyenv: VIRTUALENV_PATH/bin/python
+pyenv: VIRTUALENV_PATH/bin
 ```
 8. Create gunicorn systemctl service
 ```

@@ -2,7 +2,7 @@
 
 repo_name=$(awk -F': ' '/repo_name/ {print $2}' local_settings.txt)
 repo_url=$(awk -F': ' '/repo_url/ {print $2}' local_settings.txt)
-requirements=$(awk -F': ' '/requirements/ {print $2}' local_settings.txt)
+test_requirements=$(awk -F': ' '/test_requirements/ {print $2}' local_settings.txt)
 signature=$1
 message=$2
 
@@ -15,7 +15,7 @@ virtualenv -p python3 env
 git clone $repo_url
 cd $repo_name
 
-pip install -r $requirements
+pip install -r $test_requirements
 python manage.py test
 exitcode=$?
 
