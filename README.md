@@ -4,7 +4,7 @@ Automatic server updates with nginx, gunicorn and uwsgi
 CI will automatically pull your django project when a commit is pushed to master. The code is then tested before it is deployed on the server.
 
 ## Setup
-1. Clone the github repository `git clone https://github.com/ecuatox/ci.git`
+1. Clone the github repository `git clone https://github.com/tenstad/ci.git`
 2. Enter the repository `cd ci`
 3. Create a virtual envirement `virtualenv -p python3 env`
 4. Source the envirement `source env/bin/activate`
